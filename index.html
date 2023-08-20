@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PortFolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2>Wahid Nur Rohman.</h2>
+    <button 
+    class="burger"
+    onclick="toggleMenu ()"
+    id="toggle"></button>
+    <div class="menubar">
+      <a href="#home" class="active" style="--i:1" id="home-link">Home</a>
+      <a href="#about" style="--i:2" id="home-link">About Me</a>
+      <a href="#service" style="--i:3" id="home-link">Service</a></a>
+      <a href="#portfolio" style="--i:4" id="home-link">PorFolio</a>
+      <a href="#resume" style="--i:5" id="home-link">Resume</a>
+      <a href="#contact" style="--i:6" id="home-link">contact</a>
+    </div>
+  </nav>
+  <section class="home seek" id="home">
+    <div class="main">
+      <div class="content">
+        <div class="greeting">
+          <h3>Halo Salam Kenal!</h3>
+          <h3>Saya <span>Wahid.</span></h3>
+          <h3>Seorang :</h3>
+        </div>
+      </div>
+      <div class="text-animation">
+        <span >GAME DEVELOPMENT</span>
+        <span >FULL STACK DEVELOPER</span>
+        <span >CONTENT CREATOR</span>
+      </div>
+      <div class="talk">
+        <a href="#">Download My CV</a>
+      </div>
+      <div class="media-social">
+        <div style="--i:1">
+          <i class="bx bxl-linkedin-square bx-md" id="linkedin"></i>
+        </div>
+        <div style="--i:2">
+          <i class='bx bxl-github bx-md' id="github"></i>
+        </div>
+        <div style="--i:3">
+          <i class='bx bxl-instagram bx-md' id="instagram"></i>
+        </div>
+        <div style="--i:4">
+          <i class='bx bxl-youtube bx-md' id="youtube"></i>
+        </div>
+        <div style="--i:5">
+          <i class='bx bxl-twitter bx-md' id="twitter"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about seek" id="about">
+    <div class="main-about">
+      <div class="foto">
+        <img src="asset/Foto.png" alt="fotoprofile" width="50px" height="50px"></div>
+        <h3 style="--i:1">ABOUT <span>ME</span></h3>
+        <p style="--i:2">Saya adalah mahasiswa Teknologi Informasi dengan minat dalam [sebutkan area spesialisasi]. Saya mahir dalam [sebutkan bahasa pemrograman atau keterampilan TI lainnya], dan memiliki pengalaman dalam [sebutkan proyek atau aktivitas relevan]. Saya ingin terus belajar dan berkembang dalam lingkungan TI yang dinamis. Tujuan saya adalah [sebutkan tujuan karir atau pendidikan].</p>
+    </div>
+  </section>
+  <section class="service seek" id="service">
+    <div class="tittle">
+      <h2>SERVICE</h2>
+    </div>
+    <div class="card-service" style="--i:1">
+      <h4>WEB DEVELOPMENT</h4>
+      <h2>Web Design</h2>
+      <p>Menampilkan identitas bisnis Anda secara unik dan menarik adalah kunci kesuksesan online. Kami di tim web development kami siap membantu Anda mewujudkan visi Anda dengan solusi desain web yang modern dan kreatif. Dari konsep hingga peluncuran, kami akan bekerja sama dengan Anda untuk menciptakan tampilan website yang memikat, responsif, dan sesuai dengan tujuan bisnis Anda.</p>
+      <p id="webText" class="hidden-satu">
+        <span>Keunggulan layanan kami: </span><br>
+- Desain yang Elegan: Tim desain kami akan menciptakan tampilan yang mencerminkan nilai dan estetika bisnis Anda.<br>
+<br>- Responsif: Website yang mudah diakses di berbagai perangkat, dari smartphone hingga desktop.</br>
+<br>- Optimalisasi SEO: Membantu website Anda untuk ditemukan dengan mudah di mesin pencari.</br>
+<br>- Navigasi Intuitif: Pengalaman pengguna yang lancar melalui antarmuka yang mudah dinavigasi.</br>
+
+<br>Tingkatkan online presence Anda dan tarik lebih banyak pelanggan dengan website yang menonjol. Hubungi kami hari ini untuk konsultasi gratis dan mulailah perjalanan menuju tampilan web yang memukau dan berkinerja tinggi.
+      </p>
+      <a onclick="webDetail()" id="satu">More Detail</a>
+    </div>
+    <div class="card-service" style="--i:2">
+      <h4>GAME DEVELOPMENT</h4>
+      <h2>Game Progammer</h2>
+      <p>Jelajahi dunia yang penuh petualangan dan tantangan dalam game kami yang baru! Dapatkan pengalaman gaming yang mendalam dengan grafik memukau dan gameplay yang adiktif. Siap untuk menguji kemampuanmu dan menjadi pemenang di dalam dunia virtual kami?</p>
+      <p id="gameText" class="hidden-2">
+        <span>Fitur Unggulan : </span><br>
+- Dunia terbuka yang luas untuk dieksplorasi, dengan detail yang menakjubkan.<br>
+<br>- Berbagai karakter dengan kepribadian unik siap memandu dan menantangmu.</br>
+<br>- Senjata keren dan sihir mengagumkan untuk digunakan dalam pertempuran seru.</br>
+<br>- Tantangan multiplayer online yang akan menguji kemampuanmu melawan pemain lain dari seluruh dunia.</br>
+<br>- Update reguler untuk memberikan pengalaman bermain yang selalu segar dan menarik.</br>
+
+<br>Unduh game kami sekarang dan buktikan bahwa kamu adalah pahlawan sejati dalam dunia kami! Ayo, waktunya untuk memulai petualangan epik!.
+      </p>
+      <a onclick="gameDetail()" id="dua">More Detail</a>
+    </div>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <div class="tittle">
+      <h2>PORT<span>FOLIO</span></h2>
+      <h4>My Project</h4>
+    </div>
+    
+    <div class="my-gallery">
+      
+      <div class="gallery">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+        
+        <div class="slide first">
+          <img src="asset/gambar website/1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="asset/gambar website/2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="asset/gambar website/3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="asset/gambar website/4.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="asset/gambar website/5.jpg" alt="">
+        </div>
+        
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+        
+      </div>
+      
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+      </div>
+      
+    </div>
+    <h4 class="readmore">Read More</h2>
+  </section>
+  <section class="resume" id="resume">
+    <h2>RESU<span>ME</span></h2>
+    <H4>My Story</H4>
+    <div class="education">
+      <h2>PENDIDIKAN</h2>
+      
+      <div class="formal">
+        
+        <ul>
+          <li class="pendidikan">
+            <h4>Lorem ipsum dolor sit.</h4>
+          </li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iste a vitae error tenetur nesciunt aliquid natus sit, consequatur minus!</p>
+        
+      </div>
+      
+      <div class="formal">
+        
+        <ul>
+          <li class="pendidikan">
+            <h4>Lorem ipsum dolor sit.</h4>
+          </li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iste a vitae error tenetur nesciunt aliquid natus sit, consequatur minus!</p>
+        
+      </div>
+      
+      <div class="formal">
+        
+        <ul>
+          <li class="pendidikan" id="ds">
+            <h4>Lorem ipsum dolor sit.</h4>
+          </li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iste a vitae error tenetur nesciunt aliquid natus sit, consequatur minus!</p>
+        
+      </div>
+      
+      <div class="non-formal">
+        <ul>
+          <li class="pendidikan"><h4>Lorem ipsum dolor sit.</h4></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt totam quae recusandae laborum eveniet aliquam maiores tempore et qui obcaecati.</p>
+      </div>
+      
+    </div>
+    <div class="skill">
+      
+    </div>
+    <div class="experience">
+      
+    </div>
+  </section>
+  <section class="contact"></section>
+  <script>
+    const toggleMenu = () => {
+    const navElement = document.querySelector("nav");
+    navElement.classList.toggle("open");
+    };
+    
+    function webDetail() {
+  var webText = document.getElementById("webText");
+  var moreDetailLink = document.getElementById("satu");
+
+  if (webText.classList.contains("hidden-satu")) {
+    webText.classList.remove("hidden-satu");
+    moreDetailLink.textContent = "Less Detail";
+  } else {
+    webText.classList.add("hidden-satu");
+    moreDetailLink.textContent = "More Detail";
+  }
+}
+
+// Hide the detail text initially
+    document.addEventListener("DOMContentLoaded", function() {
+  var webText = document.getElementById("webText");
+  webText.classList.add("hidden-satu");
+});
+
+
+function gameDetail() {
+  var gameText = document.getElementById("gameText");
+  var moreDetailLink = document.getElementById("dua");
+
+  if (gameText.classList.contains("hidden-dua")) {
+    gameText.classList.remove("hidden-dua");
+    moreDetailLink.textContent = "Less Detail";
+  } else {
+    gameText.classList.add("hidden-dua");
+    moreDetailLink.textContent = "More Detail";
+  }
+}
+
+// Hide the detail text initially
+    document.addEventListener("DOMContentLoaded", function() {
+  var gameText = document.getElementById("gameText");
+  gameText.classList.add("hidden-dua");
+});
+
+var counter = 1;
+setInterval(function(){
+  document.getElementById("radio" + counter).checked = true;
+  counter ++;
+  if (counter > 5){
+    counter = 1;
+  }
+},5000);
+
+
+
+
+  </script>
+  <script defer src="script.js"></script>
+</body>
+</html>
